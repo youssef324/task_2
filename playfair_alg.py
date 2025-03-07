@@ -70,8 +70,8 @@ def decrypt_playfair(ciphertext, matrix):
     return plaintext
 
 if __name__ == "__main__":
-    choice = input("1.Encrypt \n 2.Decrypt ").strip().lower()
-    if choice not in ["e", "d"]:
+  choice = input("1.Encrypt \n 2.Decrypt\n(1,2): ").strip().lower()
+    if choice not in ["1", "2"]:
         print("Invalid choice. Please enter '1' for encrypt or '2' for decrypt.")
         exit()
 
